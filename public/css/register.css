@@ -5,14 +5,13 @@
 }
 
 :root {
-    /* --bg-yellow: #ffde3a; */
-    --bg-yellow: #fff159;
+    --bg-yellow: #ffde3a;
+    /* --bg-yellow: #fff159; */
     --bg-blue: #03264C;
     --bg-sky: #1259c3;
     --bg-dark-gray: #666;
     --bg-light-gray: #ebebeb;
     --bg-green: #39b54a;
-    --border-input: #00f;
 
 }
 
@@ -87,7 +86,7 @@ body {
 
 .header__title {
     text-align: center;
-    margin: 2px 0 12px;
+    margin: 18px 0;
     font-weight: 400;
 }
 
@@ -125,100 +124,17 @@ body {
     cursor: pointer;
 }
 
-.img-banner {
-    background-image: url(/img/img-home-banner.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 130px;
+
+
+
+main {
+    max-width: 1300px;
+    background: #F00;
+    padding: 20px;
+    height: 50vh;
 }
 
-.main {
-    background: var(--bg-light-gray);
-    padding: 40px 0;
-}
 
-.main__section {
-    max-width: 1350px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 0 20px;
-}
-
-.main__section > h3 {
-    color: var(--bg-dark-gray);
-    font-size: 24px;
-    margin: 0 auto 10px;
-    width: 100%;
-}
-
-.main__section .main__section-ofertas {
-    margin-top: 25px;
-}
-
-.main__section-product {
-    background: #FFF;
-    margin-bottom: 25px;
-    min-width: 280px;
-    max-width: 320px; /* 310 ACA */
-
-    /* min-width: 230px;
-    max-width: 320px; */
-    flex: 1;
-    padding: 5px 0;
-}
-
-.main__section-product img {
-    display: block;
-    margin: auto;
-    height: 270px; 
-    /* width: 240px;  */
-    width: 80%;
-    padding: 4px;
-
-}
-
-.main__section-product-icon {
-    border-top: 3px solid var(--bg-light-gray);
-    position: relative;
-    margin: 10px 0 18px;
-}
-
-.main__section-product i { 
-    color: var(--bg-green);
-    border-radius: 50%;
-    border: 2px solid var(--bg-green);
-    padding: 10px 8px;  
-    position: absolute;
-    right: 20px;
-    top: -18px;
-    background: #fff;
-    transition: .5s transform;
-
-}
-
-.main__section-product-details {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 14px;
-    padding: 0 15px;
-
-}
-.main__section-product-price {
-}
-
-.main__section-product-offer {
-    color: var(--bg-green);
-
-}
-
-.main__section-product-name {
-    color: var(--bg-dark-gray);
-    padding: 0 15px 15px;
-}
 
 .footer {
     padding: 15px 0;
@@ -247,33 +163,6 @@ body {
 
 
 
-@keyframes rotateToTruck {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    40% {
-        transform: rotate(-45deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
-
-@media screen and (min-width: 510px) { 
-    .main__section-product {
-        min-width: 230px;
-        max-width: 320px;
-    }
-
-    .main__section-product img {
-        width: 240px; 
-    }
-}
-
 
 @media screen and (min-width: 769px) { 
     .header {
@@ -293,8 +182,6 @@ body {
 
         text-align: left;
     }
-
-
 
     .header__section-form {
         flex: .6;
@@ -347,19 +234,6 @@ body {
         margin-right:2px;
     }
 
-    .img-banner {
-        height: 200px;
-    }
-
-    .main__section {
-        padding: 0 30px;
-    }
-
-
-    .header__menu-icon {
-        display: none;
-    }
-
     /* FOOTER */
     .footer-box {
         display: flex;
@@ -370,7 +244,6 @@ body {
         border-right: 2px solid #ccc;
 
         border-left: 2px solid #ccc;
-
     }
 
     .footer__copyright {
@@ -383,8 +256,6 @@ body {
 
 
 @media screen and (min-width: 1024px) {
-
-    
     .header__section {
         gap: 30px;
     }
@@ -396,37 +267,4 @@ body {
     .header__section-form {
         flex: .7;
     }
-
-    .img-banner {
-        height: 270px;
-    }
-
-    /* ANIMACIONES */
-    .main__section-product {
-        transition: .3s box-shadow;
-        cursor: pointer;
-        overflow: hidden;
-    }
-
-    .main__section-product:hover {
-        box-shadow: 9px 7px 15px rgba(32, 31, 31, 0.18);   
-    } 
-
-    .main__section-product-name {
-        opacity: 0;
-        transition: .4s transform , .4s transform;
-        transform: translate(-50px, 5px);
-
-    }
-
-    .main__section-product:hover .main__section-product-name {
-        opacity: 1;        
-        transform: translate(0, 0);
-
-    } 
-    
-    .main__section-product:hover .icon-camion {
-        animation: rotateToTruck 1.5s;
-    }
-
 }
