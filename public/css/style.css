@@ -22,7 +22,7 @@ body {
 
 .header {
     background: var(--bg-yellow);
-    background: #0af;
+    /* background: #0af; */
     font-size: 16px;
     padding: 10px 0;
 }
@@ -76,12 +76,12 @@ body {
 
 .header__section-form input:focus { 
     outline: none;
-    border: 1px solid #888;
-    border-right: 0px solid #888;
+    border: 2px solid #333;
+    border-right: 0px solid #333;
 }
 
 .header__section-form:focus-within button {
-    border: 1px solid #888;
+    border: 2px solid #333;
     border-left: 1px solid #ddd;
 }
 
@@ -313,6 +313,7 @@ body {
     .header__title {
         flex: 0.40;
         text-align: justify;
+        margin: 0;
     }
 
     .header__nav {
@@ -367,9 +368,9 @@ body {
     }
 
     .footer__section-envios {
-        border-right: 2px solid #ccc;
+        border-right: 2px solid #ddd;
 
-        border-left: 2px solid #ccc;
+        border-left: 2px solid #ddd;
 
     }
 
